@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.collections.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.collections.FXCollections?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller2">
+   <children>
+      <TextField editable="false" layoutX="23.0" layoutY="20.0" prefHeight="26.0" prefWidth="123.0" text="Modo preferido:" />
+      <TextField layoutX="14.0" layoutY="61.0" prefHeight="26.0" prefWidth="132.0" text="Ciudad preferida:" />
+      <TextField fx:id="mod" layoutX="166.0" layoutY="20.0" visible="false" />
+      <TextField fx:id="lug" layoutX="166.0" layoutY="61.0" />
+      <Button layoutX="135.0" layoutY="117.0" mnemonicParsing="false" onAction="#gua" text="APLICAR" />
+      <MenuButton fx:id="menuB" layoutX="191.0" layoutY="20.0" mnemonicParsing="false" text="-">
+        <items>
+          <CheckMenuItem fx:id="horaria" mnemonicParsing="false" onAction="#metodo" text="Horaria" />
+          <CheckMenuItem fx:id="diaria" mnemonicParsing="false" onAction="#metodo" text="Diaria" />
+        </items>
+      </MenuButton>
+   </children>
+</AnchorPane>

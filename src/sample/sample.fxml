@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.collections.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.collections.FXCollections?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <TabPane layoutX="123.0" layoutY="124.0" prefHeight="400.0" prefWidth="477.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="123.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <tabs>
+          <Tab fx:id="tab1" text="Untitled Tab 1">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Text fx:id="e1" layoutX="14.0" layoutY="194.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER">
+                           <font>
+                              <Font size="24.0" />
+                           </font></Text>
+                        <Text fx:id="m1" fill="#dd0909" layoutX="224.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+                           <font>
+                              <Font size="24.0" />
+                           </font></Text>
+                        <Text fx:id="n1" fill="#1b33eb" layoutX="224.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+                            <font>
+                                <Font size="24.0" />
+                            </font></Text>
+                        <ImageView fx:id="im" fitHeight="150.0" fitWidth="200.0" layoutY="-4.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fitHeight="35.0" fitWidth="10.0" layoutX="207.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@alta1.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="35.0" fitWidth="10.0" layoutX="207.0" layoutY="54.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@baja1.png" />
+                           </image>
+                        </ImageView>
+                        <Text fx:id="v1" layoutX="391.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+                            <font>
+                                <Font size="24.0" />
+                            </font></Text>
+                        <Text fx:id="v2" layoutX="391.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+                            <font>
+                                <Font size="24.0" />
+                            </font></Text>
+                        <Text fx:id="fle1" layoutX="263.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0">
+                            <font>
+                                <Font size="24.0" />
+                            </font></Text>
+                        <Text fx:id="fle2" layoutX="263.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0">
+                            <font>
+                                <Font size="24.0" />
+                            </font></Text>
+                        <Text fx:id="des1" layoutX="14.0" layoutY="297.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="446.13671875">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Text>
+                        <ListView fx:id="lv" layoutX="82.0" layoutY="46.0" prefHeight="371.0" prefWidth="477.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                        <Separator layoutX="-3.0" layoutY="-30.0" orientation="VERTICAL" prefHeight="200.0" />
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+            <Tab fx:id="tab2" text="Untitled Tab 1">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Text fx:id="e2" layoutX="14.0" layoutY="194.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="m2" fill="#dd0909" layoutX="224.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="n2" fill="#1b33eb" layoutX="224.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Text>
+                        <ImageView fx:id="im2" fitHeight="150.0" fitWidth="200.0" layoutY="-4.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fitHeight="35.0" fitWidth="10.0" layoutX="207.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@alta1.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="35.0" fitWidth="10.0" layoutX="207.0" layoutY="54.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@baja1.png" />
+                           </image>
+                        </ImageView>
+                        <Text fx:id="v21" layoutX="391.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="v22" layoutX="391.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="fle21" layoutX="263.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="fle22" layoutX="263.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Text>
+                         <Text fx:id="des2" layoutX="14.0" layoutY="297.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="446.13671875">
+                             <font>
+                                 <Font size="18.0" />
+                             </font>
+                         </Text>
+                        <ListView fx:id="lv2" layoutX="82.0" layoutY="46.0" prefHeight="371.0" prefWidth="477.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab fx:id="tab3" text="Untitled Tab 1">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Text fx:id="e3" layoutX="14.0" layoutY="194.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="m3" fill="#dd0909" layoutX="224.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="n3" fill="#1b33eb" layoutX="224.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Text>
+                        <ImageView fx:id="im3" fitHeight="150.0" fitWidth="200.0" layoutY="-4.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fitHeight="35.0" fitWidth="10.0" layoutX="207.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@alta1.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="35.0" fitWidth="10.0" layoutX="207.0" layoutY="54.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@baja1.png" />
+                           </image>
+                        </ImageView>
+                        <Text fx:id="v31" layoutX="391.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="v32" layoutX="391.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="fle31" layoutX="263.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="fle32" layoutX="263.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Text>
+                         <Text fx:id="des3" layoutX="14.0" layoutY="297.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="446.13671875">
+                             <font>
+                                 <Font size="18.0" />
+                             </font>
+                         </Text>
+                        <ListView fx:id="lv3" layoutX="82.0" layoutY="46.0" prefHeight="371.0" prefWidth="477.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab fx:id="tab4" text="Untitled Tab 1">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Text fx:id="e4" layoutX="14.0" layoutY="194.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="m4" fill="#dd0909" layoutX="224.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="n4" fill="#1b33eb" layoutX="224.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Text>
+                        <ImageView fx:id="im4" fitHeight="150.0" fitWidth="200.0" layoutY="-4.0" pickOnBounds="true" preserveRatio="true" />
+                        <ImageView fitHeight="35.0" fitWidth="10.0" layoutX="207.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@alta1.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="35.0" fitWidth="10.0" layoutX="207.0" layoutY="54.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@baja1.png" />
+                           </image>
+                        </ImageView>
+                        <Text fx:id="v41" layoutX="391.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="v42" layoutX="391.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="fle41" layoutX="263.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="fle42" layoutX="263.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Text>
+                         <Text fx:id="des4" layoutX="14.0" layoutY="297.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="446.13671875">
+                             <font>
+                                 <Font size="24.0" />
+                             </font>
+                         </Text>
+                        <ListView fx:id="lv4" layoutX="82.0" layoutY="46.0" prefHeight="371.0" prefWidth="477.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab fx:id="tab5" text="Proximos dias">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                         <Text fx:id="e5" layoutX="26.0" layoutY="165.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+                             <font>
+                                 <Font size="18.0" />
+                             </font></Text>
+                         <Text fx:id="m5" layoutX="224.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+                           <font>
+                              <Font size="24.0" />
+                           </font></Text>
+                         <Text fx:id="n5" layoutX="224.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+                           <font>
+                              <Font size="24.0" />
+                           </font></Text>
+                         <ImageView fx:id="im5" fitHeight="150.0" fitWidth="200.0" layoutY="-4.0" pickOnBounds="true" preserveRatio="true" />
+                         <ImageView fitHeight="35.0" fitWidth="10.0" layoutX="207.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+                             <image>
+                                 <Image url="@alta1.png" />
+                             </image>
+                         </ImageView>
+                         <ImageView fitHeight="35.0" fitWidth="10.0" layoutX="207.0" layoutY="54.0" pickOnBounds="true" preserveRatio="true">
+                             <image>
+                                 <Image url="@baja1.png" />
+                             </image>
+                         </ImageView>
+                         <Text fx:id="v15" layoutX="391.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+                           <font>
+                              <Font size="24.0" />
+                           </font></Text>
+                         <Text fx:id="v25" layoutX="391.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+                           <font>
+                              <Font size="24.0" />
+                           </font></Text>
+                        <Button layoutX="26.0" layoutY="322.0" mnemonicParsing="false" onAction="#tmen" text="&lt;&lt;" />
+                        <Button layoutX="411.0" layoutY="322.0" mnemonicParsing="false" onAction="#tmas" text="&gt;&gt;" />
+                        <Text fx:id="d1" layoutX="201.0" layoutY="339.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                        <Text fx:id="des5" layoutX="15.0" layoutY="240.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="446.13671875">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="Gráficas">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="ciud" layoutX="168.0" layoutY="254.0" mnemonicParsing="false" onAction="#ciud" text="APLICAR!" />
+                        <MenuButton fx:id="dVist" layoutX="140.0" layoutY="65.0" mnemonicParsing="false" text="MenuButton">
+                          <items>
+                            <CheckMenuItem fx:id="uno" mnemonicParsing="false" onAction="#dias" text="1" />
+                            <CheckMenuItem fx:id="dos" mnemonicParsing="false" onAction="#dias" text="2" />
+                              <CheckMenuItem fx:id="tres" mnemonicParsing="false" onAction="#dias" text="3" />
+                              <CheckMenuItem fx:id="cuatro" mnemonicParsing="false" onAction="#dias" text="4" />
+                              <CheckMenuItem fx:id="cinco" mnemonicParsing="false" onAction="#dias" text="5" />
+                              <CheckMenuItem fx:id="seis" mnemonicParsing="false" onAction="#dias" text="6" />
+                              <CheckMenuItem fx:id="siete" mnemonicParsing="false" onAction="#dias" text="7" />
+                              <CheckMenuItem fx:id="ocho" mnemonicParsing="false" onAction="#dias" text="8" />
+                          </items>
+                        </MenuButton>
+                        <Text layoutX="62.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DÍAS VISTA:" />
+                        <MenuButton fx:id="dat" layoutX="140.0" layoutY="102.0" mnemonicParsing="false" text="MenuButton">
+                           <items>
+                              <CheckMenuItem fx:id="temperatura" mnemonicParsing="false" onAction="#dat" text="Temperatura" />
+                              <CheckMenuItem fx:id="humedad" mnemonicParsing="false" onAction="#dat" text="Humedad" />
+                              <CheckMenuItem fx:id="presion" mnemonicParsing="false" onAction="#dat" text="Presion" />
+                              <CheckMenuItem fx:id="viento" mnemonicParsing="false" onAction="#dat" text="Viento" />
+                           </items>
+                        </MenuButton>
+                        <Text layoutX="62.0" layoutY="119.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DATOS" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+      <ToolBar orientation="VERTICAL" prefHeight="368.0" prefWidth="123.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <items>
+            <AnchorPane prefHeight="379.0" prefWidth="95.0">
+               <children>
+                  <Button layoutX="21.0" layoutY="340.0" mnemonicParsing="false" onAction="#ref" text="Aplicar" />
+                  <MenuButton fx:id="mod" layoutX="7.0" layoutY="61.0" mnemonicParsing="false" text="MenuButton">
+                    <items>
+                        <CheckMenuItem fx:id="hor" mnemonicParsing="false" onAction="#ref" text="Horaria" />
+                        <CheckMenuItem fx:id="dia" mnemonicParsing="false" onAction="#ref" text="Diaria" />
+                    </items>
+                  </MenuButton>
+                  <MenuButton fx:id="lug" layoutX="-2.0" layoutY="135.0" mnemonicParsing="false" text="MenuButton">
+                    <items>
+                        <CheckMenuItem fx:id="Barcelona" mnemonicParsing="false" onAction="#ref2" text="Barcelona" />
+                        <CheckMenuItem fx:id="Girona" mnemonicParsing="false" onAction="#ref2" text="Girona" />
+                    </items>
+                  </MenuButton>
+                  <Text layoutX="19.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="OPCIONES" />
+                  <Text layoutX="19.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Modo de vista" />
+                  <Text layoutX="28.0" layoutY="124.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ciudad" />
+                  <TextField fx:id="tf" layoutX="-1.0" layoutY="177.0" onAction="#ref2" prefHeight="25.0" prefWidth="115.0" />
+                  <MenuBar layoutX="-1.0" layoutY="-8.0" prefHeight="34.0" prefWidth="115.0">
+                    <menus>
+                      <Menu mnemonicParsing="false" text="File">
+                        <items>
+                          <MenuItem mnemonicParsing="false" onAction="#lee" text="Preferences" />
+                        </items>
+                      </Menu>
+                      <Menu mnemonicParsing="false" text="Help">
+                        <items>
+                          <MenuItem mnemonicParsing="false" text="About" />
+                        </items>
+                      </Menu>
+                    </menus>
+                  </MenuBar>
+               </children>
+            </AnchorPane>
+         </items></ToolBar>
+      <Separator layoutX="115.0" orientation="VERTICAL" prefHeight="400.0" prefWidth="16.0" />
+   </children>
+</AnchorPane>
